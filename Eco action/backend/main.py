@@ -18,7 +18,7 @@ def signup(username: str, email: str, password: str):
     try:
         user = User(username, email, password)
         user.save()
-        return {"status": "success"}
+        return {"status ": "success"}
     except Exception as e:
         return {"status": "error", "detail": str(e)}
 
