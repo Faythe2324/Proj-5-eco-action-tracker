@@ -4,7 +4,7 @@ The **Eco-Action Tracker** is a community sustainability engagement system that 
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 - Promote sustainable daily habits among users
 - Track, score, and visualize eco-actions
 - Encourage participation in community challenges
@@ -12,7 +12,7 @@ The **Eco-Action Tracker** is a community sustainability engagement system that 
 
 ---
 
-## 🧱 System Features
+## System Features
 
 | Use Case | Description |
 |---------|-------------|
@@ -25,7 +25,7 @@ The **Eco-Action Tracker** is a community sustainability engagement system that 
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Component | Implementation |
 |----------|----------------|
@@ -40,5 +40,5 @@ The **Eco-Action Tracker** is a community sustainability engagement system that 
 
 ---
 
-## 📂 Project Structure
+
 
