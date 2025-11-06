@@ -43,7 +43,7 @@ c.execute("SELECT COUNT(*) FROM challenges")
 if c.fetchone()[0] == 0:
     challenges_data = [
         ("Zero Waste Week", 100),
-        ("Bike 50 km Challenge", 250),
+        ("Bike 50km Challenge", 250),
         ("Plant 5 Trees Challenge", 50),
     ]
     c.executemany("INSERT INTO challenges (name, reward_points) VALUES (?, ?)", challenges_data)
