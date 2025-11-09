@@ -1,17 +1,22 @@
 """
-Validates registration fields before account creation.
+IC1_2: Input Validation for User Registration
+This module validates user input such as username, email, and password.
 """
 
-class InputValidator:
-    def validate(self, username, email, password, confirm_password):
-        if len(username) < 3:
-            return "Username must have at least 3 characters."
-        if len(password) < 6:
-            return "Password must be at least 6 characters."
-        if password != confirm_password:
-            return "Passwords must match."
-        return "Input valid."
+def validate_registration_input(username: str, email: str, password: str, confirm_password: str) -> bool:
+    """
+    Placeholder function to validate registration input.
+    Returns True if input passes basic checks, False otherwise.
+    """
+    if not username or not email or not password:
+        print("[IC1_2] Missing required fields")
+        return False
+    if password != confirm_password:
+        print("[IC1_2] Passwords do not match")
+        return False
+    print("[IC1_2] Input validation passed")
+    return True
 
+# Example usage
 if __name__ == "__main__":
-    v = InputValidator()
-    print(v.validate("Abi", "abi@mail.com", "123456", "123456"))
+    validate_registration_input("testuser", "test@example.com", "pass123", "pass123")

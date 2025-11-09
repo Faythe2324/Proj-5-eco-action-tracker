@@ -1,25 +1,24 @@
 """
-Handles user account creation for Eco Action Tracker.
+UC1: User Registration
+Handles creation of new user accounts.
+This is a placeholder module for demonstration purposes.
 """
 
 class UserRegistration:
-    def __init__(self):
-        # Temporary in-memory user list
-        self.users = {}
+    def __init__(self, username: str, email: str, password: str):
+        self.username = username
+        self.email = email
+        self.password = password
 
-    def create_account(self, username, email, password, confirm_password):
-        if username in self.users:
-            return "Username already exists."
+    def register(self):
+        """
+        Placeholder method to simulate user registration.
+        """
+        print(f"[UC1] Registering user: {self.username} with email: {self.email}")
+        # In real code, this would save the user to the database
+        return True
 
-        self.users[username] = {
-            "email": email,
-            "password": password,
-            "eco_points": 0,
-            "carbon_saved": 0.0,
-            "rank": None
-        }
-        return f"✅ Account created successfully! Welcome, {username} 🌿"
-
+# Example usage
 if __name__ == "__main__":
-    reg = UserRegistration()
-    print(reg.create_account("name", "email", "pass", "pass"))
+    dummy_user = UserRegistration("testuser", "test@example.com", "password123")
+    dummy_user.register()
