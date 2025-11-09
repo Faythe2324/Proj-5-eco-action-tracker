@@ -12,6 +12,72 @@ The **Eco-Action Tracker** is a community sustainability engagement system that 
 
 ---
 
+## Setup Instructions
+
+### Windows Terminal Setup
+
+1. Prerequisites
+   - Python 3.8 or higher
+   - pip (Python package manager)
+   - Git (optional, for cloning the repository)
+
+2. Clone or Download the Project
+   ```bash
+   git clone <repository-url>
+   cd EcoActionTracker
+   ```
+
+3. Create Virtual Environment
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+
+4. Install Dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Database Initialization
+   - The SQLite database will be automatically created when you first run the application
+   - Sample data (rewards, challenges) will be seeded on startup
+
+## How to Run the Application
+
+### Step 1: Start the Backend Server
+```bash
+.venv\Scripts\activate
+uvicorn backend.main:app --reload
+```
+The API will be available at: http://127.0.0.1:8000
+
+### Step 2: Start the Frontend Application
+```bash
+.venv\Scripts\activate
+python main_app.py
+```
+
+### Step 3: Access the Application
+- The desktop application window will open automatically
+- For API documentation, visit: http://127.0.0.1:8000/docs
+
+## Dependencies
+
+The project requires the following Python packages:
+
+- flet>=0.10.0
+- fastapi>=0.68.0
+- uvicorn[standard]>=0.15.0
+- requests>=2.25.0
+- matplotlib>=3.5.0
+- pandas>=1.3.0
+- pydantic>=1.8.0
+
+All dependencies are listed in requirements.txt and will be installed automatically when running pip install -r requirements.txt.
+
+
+---
+
 ## System Features
 
 | Use Case | Description |
