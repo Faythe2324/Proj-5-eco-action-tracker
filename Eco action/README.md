@@ -39,11 +39,11 @@ The **Eco-Action Tracker** is a community sustainability engagement system that 
 | **Environmental Data Integration** | Carbon footprint calculation API |
 
 
-🧑‍🤝‍🧑 Team Members & Roles
+## 🧑‍🤝‍🧑 Team Members & Roles
 Member Name	Role & Contribution
-Abigail Kaye Duarte	--> Backend & Database Developer — Implemented SQLite data handling, structured database schema, managed data persistence and CRUD operations.
-Faythe Alison Magsombol --> Project Lead & UI/UX / Documentation — Coordinated system design, organized code structure, developed user interface flow, and prepared documentation and presentation materials.
-Joseph Noel Paloma --> Feature Logic & API Integration Developer — Developed eco-action scoring logic, implemented carbon footprint estimation integration, and managed leaderboard + challenge functionality.
+Abigail Kaye Duarte	| Backend & Database Developer | Implemented SQLite data handling, structured database schema, managed data CRUD operations.
+Faythe Alison Magsombol | Project Lead & UI/UX / Documentation | Coordinated system design, organized code structure, developed user interface flow, and prepared documentation and presentation materials.
+Joseph Noel Paloma | Feature Logic & API Integration Developer | Developed eco-action scoring logic, implemented carbon footprint estimation integration, and managed leaderboard + challenge functionality.
 ---
 
 
