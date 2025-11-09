@@ -1,19 +1,27 @@
 """
-Handles secure login authentication.
+UC2: User Login
+Handles authentication of users.
 """
 
-class LoginSystem:
-    def __init__(self):
-        # Example stored users
-        self.users = {"Abigail": "green123"}
+class UserLogin:
+    def __init__(self, username: str, password: str):
+        self.username = username
+        self.password = password
 
-    def login(self, username, password):
-        if username not in self.users:
-            return "User not found."
-        if self.users[username] != password:
-            return "Incorrect password."
-        return f"✅ Login successful! Welcome back, {username} 💚"
+    def login(self):
+        """
+        Placeholder method to simulate user login.
+        """
+        print(f"[UC2] Logging in user: {self.username}")
+        # In real code, this would check the username and password in the database
+        if self.username == "testuser" and self.password == "password123":
+            print("[UC2] Login successful")
+            return True
+        else:
+            print("[UC2] Login failed")
+            return False
 
+# Example usage
 if __name__ == "__main__":
-    login = LoginSystem()
-    print(login.login("name", "pass"))
+    dummy_login = UserLogin("testuser", "password123")
+    dummy_login.login()
