@@ -1,13 +1,28 @@
-import random
+"""
+UC7.1: Environmental API
+Simulates fetching carbon saved or environmental impact data.
+"""
 
-class CarbonAPI:
-    def calculate(self, action):
-        carbon_map = {
-            "Bike to Work": (1.0, 3.5),
-            "Recycling": (0.1, 0.5),
-            "Energy Save": (0.05, 0.2),
-            "Walk": (0.3, 1.0),
-            "Public Transport": (0.5, 2.0)
-        }
-        low, high = carbon_map.get(action, (0.1, 0.3))
-        return round(random.uniform(low, high), 2)
+class EnvironmentalAPI:
+    def __init__(self, user: str):
+        self.user = user
+        # Example data for CO2 saved
+        self.co2_saved_history = [2.5, 5.0, 7.2, 10.1]
+
+    def get_total_co2_saved(self):
+        """
+        Placeholder method to simulate retrieving total CO2 saved by the user.
+        """
+        total = sum(self.co2_saved_history)
+        print(f"[UC7.1] Total CO₂ saved by {self.user}: {total} kg")
+        return total
+
+    def get_history(self):
+        print(f"[UC7.1] CO₂ saved history for {self.user}: {self.co2_saved_history}")
+        return self.co2_saved_history
+
+# Example usage
+if __name__ == "__main__":
+    api = EnvironmentalAPI("CurrentUser")
+    api.get_total_co2_saved()
+    api.get_history()
