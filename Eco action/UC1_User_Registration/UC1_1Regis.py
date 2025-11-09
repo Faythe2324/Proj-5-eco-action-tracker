@@ -1,7 +1,7 @@
 """
 UC1: User Registration
 Handles creation of new user accounts.
-This is a placeholder module for demonstration purposes.
+This is a placeholder module
 """
 
 class UserRegistration:
@@ -11,9 +11,6 @@ class UserRegistration:
         self.password = password
 
     def register(self):
-        """
-        Placeholder method to simulate user registration.
-        """
         print(f"[UC1] Registering user: {self.username} with email: {self.email}")
         # In real code, this would save the user to the database
         return True
