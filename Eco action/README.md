@@ -91,6 +91,34 @@ All dependencies are listed in requirements.txt and will be installed automatica
 
 ---
 
+## File Structure
+
+- main_app.py: Main Flet application entry point
+- backend/main.py: FastAPI server and routes
+- backend/db.py: Database operations and SQLite management
+- backend/models.py: Pydantic models for API
+- UC1_UserRegistration/: User registration module
+- UC2_Login/: User authentication module
+- UC3_LogEcoAction/: Action tracking module
+- UC4_ViewPersonalStatistics/: Statistics module
+- UC5_JoinCommunityChallenge/: Challenge management module
+- UC6_ViewLeaderboard/: Leaderboard module
+- UC7_CarbonSaved/: Carbon tracking module
+- requirements.txt: Project dependencies
+
+## Use Cases
+
+UC1: User Registration - Create new user accounts with validation
+UC2: Login - Secure user authentication
+UC3: Log Eco Action - Record environmental actions with points
+UC4: View Personal Statistics - Track individual progress and analytics
+UC5: Join Community Challenge - Participate in group environmental goals
+UC6: View Leaderboard - Compare rankings with other users
+UC7: Carbon Saved - Monitor environmental impact through CO2 reduction
+
+---
+
+
 ## Technologies Used
 
 | Component | Implementation |
