@@ -1,15 +1,18 @@
 """
-Awards points for actions (same as UI quick actions).
+UC3.3: Earn Reward
+Handles reward allocation after logging an eco action.
 """
 
-class EcoActionScorer:
-    ACTION_POINTS = {
-        "Bike to Work": 25,
-        "Recycling": 10,
-        "Energy Save": 5,
-        "Walk": 8,
-        "Public Transport": 15
-    }
+class EarnReward:
+    def __init__(self, user: str, points: int):
+        self.user = user
+        self.points = points
 
-    def get_points(self, action):
-        return self.ACTION_POINTS.get(action, 1)
+    def award(self):
+        print(f"[UC3.3] {self.user} earned {self.points} points for eco actions")
+        return True
+
+# Example usage
+if __name__ == "__main__":
+    reward = EarnReward("testuser", 25)
+    reward.award()
