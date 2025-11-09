@@ -9,10 +9,10 @@ def validate_registration_input(username: str, email: str, password: str, confir
     Returns True if input passes basic checks, False otherwise.
     """
     if not username or not email or not password:
-        print("[IC1_2] Missing required fields")
+        print("[IC1_2] Missingrequired fields")
         return False
     if password != confirm_password:
-        print("[IC1_2] Passwords do not match")
+        print("[IC1_2] The passwords do not match")
         return False
     print("[IC1_2] Input validation passed")
     return True
